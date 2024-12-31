@@ -6,7 +6,7 @@ import { entryToString } from "~/util/container";
 import { parse } from "node-html-parser";
 import he from "he";
 
-let rangeBetween = (x: number, y: number) =>
+const rangeBetween = (x: number, y: number) =>
 	Array.from({ length: y - x + 1 }, (_, i) => i + x);
 
 if (Astro.props.toc) {
@@ -21,6 +21,7 @@ if (Astro.props.toc) {
 		// Currently unsupported to have maxHeadingLevel > 3.
 		if (Astro.props.toc.maxHeadingLevel > 3) {
 			throw new Error(
+				// biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
 				`[PageSidebar] A tableOfContents.maxHeadingLevel higher than 3 is currently unsupported.`,
 			);
 		}
@@ -34,6 +35,7 @@ if (Astro.props.toc) {
 		const headers = html.querySelectorAll(selector);
 
 		if (headers) {
+			// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 			function headerDepth(header: any) {
 				return Number(header.rawTagName.slice(1));
 			}

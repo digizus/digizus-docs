@@ -1,4 +1,8 @@
-# No cache store
+---
+name: Cache No Store
+enable_flag: Required
+sort_date: 31-Dec-2024
+---
 
 When you enable the `cache_option_enabled` compatibility flag, you can specify a value for the `cache` property of the Request interface.
 When this compatibility flag is not enabled, or `cache_option_disabled` is set, the Workers runtime will throw an `Error` saying `The 'cache' field on

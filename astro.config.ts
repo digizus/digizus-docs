@@ -11,6 +11,7 @@ import rehypeAutolinkHeadings, {
 import rehypeExternalLinks from "rehype-external-links";
 import starlightLinksValidator from "starlight-links-validator";
 import { h } from "hastscript";
+// biome-ignore lint/style/useNodejsImportProtocol: <explanation>
 import { readdir } from "fs/promises";
 import icon from "astro-icon";
 import sitemap from "@astrojs/sitemap";
@@ -72,7 +73,7 @@ const autolinkConfig: rehypeAutolinkHeadingsOptions = {
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://developers.cloudflare.com",
+	site: "https://developers.digizus.com",
 	markdown: {
 		smartypants: false,
 		rehypePlugins: [
@@ -111,7 +112,7 @@ export default defineConfig({
 	},
 	integrations: [
 		starlight({
-			title: "Cloudflare Docs",
+			title: "Digizus Docs",
 			logo: {
 				src: "./src/assets/logo.svg",
 			},
@@ -121,32 +122,31 @@ export default defineConfig({
 					tag: "meta",
 					attrs: {
 						name: "image",
-						content: "https://developers.cloudflare.com/cf-twitter-card.png",
+						content: "https://developers.digizus.com/cf-twitter-card.png",
 					},
 				},
 				{
 					tag: "meta",
 					attrs: {
 						name: "og:image",
-						content: "https://developers.cloudflare.com/cf-twitter-card.png",
+						content: "https://developers.digizus.com/cf-twitter-card.png",
 					},
 				},
 				{
 					tag: "meta",
 					attrs: {
 						name: "twitter:image",
-						content: "https://developers.cloudflare.com/cf-twitter-card.png",
+						content: "https://developers.digizus.com/cf-twitter-card.png",
 					},
 				},
 			],
 			social: {
-				github: "https://github.com/cloudflare/cloudflare-docs",
-				"x.com": "https://x.com/cloudflare",
-				youtube: "https://www.youtube.com/cloudflare",
+				github: "https://github.com/digizus/",
+				"x.com": "https://x.com/digizus",
+				youtube: "https://www.youtube.com/digizus",
 			},
 			editLink: {
-				baseUrl:
-					"https://github.com/cloudflare/cloudflare-docs/edit/production/",
+				baseUrl: "https://github.com/digizus/digizus-docs/edit/production/",
 			},
 			components: {
 				Footer: "./src/components/overrides/Footer.astro",

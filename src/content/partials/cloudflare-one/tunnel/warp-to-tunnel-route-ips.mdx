@@ -1,9 +1,7 @@
 ---
-params:
-	- one
 ---
 
-import { Markdown } from "~/components"
+import { Markdown } from "~/components";
 
 By default, WARP excludes traffic bound for [RFC 1918 space](https://datatracker.ietf.org/doc/html/rfc1918), which are IP addresses typically used in private networks and not reachable from the Internet. In order for WARP to send traffic to your <Markdown text={props.one}/>, you must configure [Split Tunnels](/cloudflare-one/connections/connect-devices/warp/configure-warp/route-traffic/split-tunnels/) so that the IP/CIDR of your <Markdown text={props.one}/> routes through WARP.
 

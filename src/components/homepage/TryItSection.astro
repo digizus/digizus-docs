@@ -3,58 +3,6 @@ import { Card, LinkCard } from "@astrojs/starlight/components";
 import Render from "~/components/Render.astro";
 ---
 
-<div>
-	<h2>Build with Cloudflare</h2>
-	<div class="sl-flex">
-		<input type="radio" id="section1" name="sections" checked />
-		<input type="radio" id="section2" name="sections" />
-		<input type="radio" id="section3" name="sections" />
-		<input type="radio" id="section4" name="sections" />
-		<input type="radio" id="section5" name="sections" />
-
-		<div class="tryit-sidebar">
-			<Card title="">
-				<div class="*:block *:p-2 *:rounded">
-					<label for="section1" id="section1Label">
-						<strong>Return HTML</strong>
-					</label>
-					<label for="section2" id="section2Label">
-						<strong>Return JSON</strong>
-					</label>
-					<label for="section3" id="section3Label">
-						<strong>Fetch HTML</strong>
-					</label>
-					<label for="section4" id="section4Label">
-						<strong>Redirect</strong>
-					</label>
-					<label for="section5" id="section5Label">
-						<strong>Respond with another site</strong>
-					</label>
-				</div>
-			</Card>
-		</div>
-
-		<div class="tryit-code ml-8 w-full !mt-0">
-			<div id="section1Content" class="!mt-0 hidden">
-				<Render file="return-html-example-js" product="workers" />
-			</div>
-			<div id="section2Content" class="!mt-0 hidden">
-				<Render file="return-json-example-js" product="workers" />
-			</div>
-			<div id="section3Content" class="!mt-0 hidden">
-				<Render file="fetch-html-example-js" product="workers" />
-			</div>
-			<div id="section4Content" class="!mt-0 hidden">
-				<Render file="redirect-example-js" product="workers" />
-			</div>
-			<div id="section5Content" class="!mt-0 hidden">
-				<Render file="respond-another-site-example-js" product="workers" />
-			</div>
-		</div>
-	</div>
-	<LinkCard title="Learn more about Workers" href="/workers/" />
-</div>
-
 <style>
 	input[type="radio"] {
 		display: none;

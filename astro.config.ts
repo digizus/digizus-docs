@@ -111,14 +111,6 @@ export default defineConfig({
 		port: 1111,
 	},
 	integrations: [
-		require("astro-expressive-code")({
-			langs: [
-				// Add the missing languages here
-				"output",
-				"gitignore",
-				"curl",
-			],
-		}),
 		starlight({
 			title: "Digizus Docs",
 			logo: {

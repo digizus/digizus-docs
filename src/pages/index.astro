@@ -36,16 +36,22 @@ const frontmatter = {
 
 const topCards = [
 	{
-		title: "Linux",
+		title: "OS",
 		links: [
 			{
 				text: "Get started with Linux",
-				href: "/linux/get-started/",
+				href: "/os/linux/get-started/",
 			},
-			{ text: "Centos", href: "/linux/centos/" },
-			{ text: "RedHat", href: "/linux/redhat/" },
-			{ text: "Ubuntu", href: "/linux/ubuntu/" },
-			{ text: "Debian", href: "/linux/debian/" },
+			{
+				text: "Get started with Windows",
+				href: "/os/windows/get-started/",
+			},
+			{ text: "Centos", href: "/os/linux/centos/" },
+			{ text: "RedHat", href: "/os/linux/redhat/" },
+			{ text: "Ubuntu", href: "/os/linux/ubuntu/" },
+			{ text: "Debian", href: "/os/linux/debian/" },
+			{ text: "Unix", href: "/os/unix/" },
+			{ text: "Windows", href: "/os/windows/" },
 		],
 		cta: {
 			text: "View all products",
@@ -53,55 +59,44 @@ const topCards = [
 		},
 	},
 	{
-		title: "Developer Products",
+		title: "DevOps",
 		links: [
-			{ text: "Workers", href: "/workers/" },
-			{ text: "Pages", href: "/pages/" },
-			{ text: "R2", href: "/r2/" },
-			{ text: "Images", href: "/images/" },
-			{ text: "Stream", href: "/stream/" },
+			{ text: "Git", href: "/devops/git/" },
+			{ text: "CI / CD", href: "/devops/cicd/" },
+			{ text: "Ansible", href: "/devops/ansible" },
+			{ text: "Containers", href: "/devops/containers/" },
+			{ text: "Infrastructure as Code (IaC)", href: "/devops/iac/" },
+			{ text: "Kubernetes (K8s)", href: "/devops/k8s/" },
+			{ text: "Programming", href: "/devops/programming/" },
 		],
 		cta: {
 			text: "View all developer products",
-			href: "/products/?product-group=Developer+platform",
+			href: "/products/?product-group=devops",
 		},
 	},
 	{
-		title: "AI Products",
+		title: "Cloud",
 		links: [
-			{
-				text: "Build a RAG app",
-				href: "/workers-ai/tutorials/build-a-retrieval-augmented-generation-ai/",
-			},
-			{ text: "Workers AI", href: "/workers-ai/" },
-			{ text: "Vectorize", href: "/vectorize/" },
-			{ text: "AI Gateway", href: "/ai-gateway/" },
-			{
-				text: "AI Playground",
-				href: "https://playground.ai.Digizus.com/",
-				target: "_blank",
-			},
+			{ text: "AWS (Amazon Web Services)", href: "/cloud/aws/" },
+			{ text: "Azure (Microsoft Azure)", href: "/cloud/azure" },
+			{ text: "GCP (Google Cloud Platform) ", href: "/cloud/gcp/" },
+			{ text: "Alibaba Cloud", href: "/cloud/alibabacloud/" },
 		],
 		cta: {
-			text: "View all AI products",
-			href: "/products/?product-group=AI",
+			text: "View all Cloud products",
+			href: "/products/?product-group=cloud",
 		},
 	},
 	{
-		title: "Zero Trust",
+		title: "Virtualization",
 		links: [
-			{ text: "Access", href: "/Digizus-one/policies/access/" },
-			{ text: "Tunnel", href: "/Digizus-one/connections/connect-networks/" },
-			{ text: "Gateway", href: "/Digizus-one/policies/gateway/" },
-			{
-				text: "Browser Isolation",
-				href: "/Digizus-one/policies/browser-isolation/",
-			},
-			{ text: "Replace your VPN", href: "/learning-paths/replace-vpn/" },
+			{ text: "VMWare", href: "/virtualization/vmware/" },
+			{ text: "KVM", href: "/virtualization/kvm/" },
+			{ text: "Proxmox", href: "/virtualization/proxmox/" },
 		],
 		cta: {
-			text: "View all Digizus One products",
-			href: "/products/?product-group=Digizus+One",
+			text: "View all Virtualization",
+			href: "/products/?product-group=virtualization",
 		},
 	},
 ];

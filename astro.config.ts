@@ -190,11 +190,6 @@ export default defineConfig({
 									"**/glossary/?term=**",
 									"/products/?product-group=*",
 									"/products/",
-									"/rules/snippets/examples/?operation=*",
-									"/rules/transform/examples/?operation=*",
-									"/workers/examples/?languages=*",
-									"/workers/examples/?tags=*",
-									"/workers-ai/models/**",
 								],
 							}),
 						]
